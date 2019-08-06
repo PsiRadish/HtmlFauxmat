@@ -1,14 +1,6 @@
-﻿// Mike Stall. http://blogs.msdn.com/jmstall
-//
-using System;
-using System.Diagnostics;
-
+﻿using System;
 using System.Windows;
-using System.Text.RegularExpressions;
-
-using System.Collections.Generic;
 using System.Text;
-using System.IO;
 
 namespace HtmlFauxmat
 {
@@ -41,7 +33,7 @@ EndSelection:<<<<<<<3
         /// </summary>
         /// <param name="htmlFragment">a html fragment</param>
         /// <param name="sourceUrl">optional Source URL of the HTML document, for resolving relative links (can be null)</param>
-        public static void CopyToClipboard(string htmlFragment, Uri sourceUrl = null)
+        public static void RawHtmlToClipboard(string htmlFragment, Uri sourceUrl = null)
         {
             var sb = new StringBuilder();
 
